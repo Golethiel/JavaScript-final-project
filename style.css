@@ -1,0 +1,282 @@
+/* * section - resets default styling effects */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: lightgrey;
+    /* padding from text to box */
+    padding: 20px;
+    /* denotes a special orientation */
+    display: flex;
+    align-items: center;
+    /* evenly spaces out elements */
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    /* text is displayed inline */
+    display: inline;
+    /* margin from end of word to the next element */
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* styling for input areas */
+input[type="text"],
+input[type="number"],
+select {
+    width: 200px;
+    padding: 5px;
+}
+
+button {
+    padding: 7px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #45a049;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+  
+.background-image {
+    /* resets image presets */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* takes up whole viewport of device */
+    width: 100vw;
+    height: 100vh;
+
+    /* adjusts resolution without stretching */
+    object-fit: cover;
+
+    object-position: center;
+
+    /* other elements will go on top of the picture */
+    z-index: -1;
+}
+
+.intro {
+    color: white;
+    text-align: left;
+
+    position: absolute;
+    top: 30%;
+    left: 5%;
+
+    width: 25%;
+}
+
+.intro h1 {
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+}
+
+.intro p {
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.about {
+    color: white;
+    text-align: left;
+
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 75%;
+}
+
+.about h1 {
+    font-family: Arial, sans-serif;
+    /* changes the size of the text relative */
+    /* to the size of an h1 header */
+    /* this will be 3.5 times as big */
+    font-size: 3.5em;
+}
+
+.about p {
+    font-family: Georgia, serif;
+    font-size: 1.25em;
+    /* line spacing */
+    line-height: 1.5;
+}
+
+.team-members {
+    margin-top: 40vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.team-members h2 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    color: white;
+}
+
+.team-card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.member-card {
+    /* rgba with the last property being opacity for transluscence */
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    /* slightly rounded box */
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    color: white;
+    line-height: 1.5;
+}
+
+.member-card h3 {
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+
+.member-card p {
+    font-weight: 400;
+}
+
+.contact-header {
+    color: white;
+}
+
+.contact-header h1 {
+    margin-top: 10vh;
+    margin-left: 10%;
+    font-size: 4em;  
+    /* to avoid the text stacking */
+    white-space: nowrap;  
+    margin: 0;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    padding: 0 5%;
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    /* organizes the input fields to be stacked */
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    height: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 250px;
+    resize: vertical;
+}
+
+/* Style for the main results container */
+#searchResults {
+    display: none;
+    /* Absolute position to place it on the right side of the screen */
+    position: absolute;
+    top: 25%; /* Adjust to vertically align with the .intro section */
+    right: 5%;
+    width: 55%;
+    max-height: 70vh; /* Set a maximum height to enable scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    
+    /* Styling to make it look good against the background */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    color: white; /* Text color for the results */
+}
+
+/* Styling for each individual result card */
+.result-card {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-height: 350px; /* Ensures consistent card size */
+}
+
+/* Styling for the image within the card */
+.result-card img {
+    width: 100%; /* Make the image fill the card's width */
+    height: 200px; /* Fixed height for consistent image size */
+    object-fit: cover; /* Ensures the image fills the space without stretching */
+    border-radius: 8px; /* Slightly rounded corners for the image */
+}
+
+/* Styling for the text content within the card */
+.card-text {
+    flex: 1; /* Allows the text content to grow and fill remaining space */
+}
+
+.result-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.result-card p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Styling for no-results or error messages */
+.no-results-message,
+.error-message {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}

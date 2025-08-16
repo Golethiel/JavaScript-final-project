@@ -1,0 +1,52 @@
+<!-- Identifies the type of the file (HTML) -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Title of the page displayed on the browser tab -->
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <!-- Company Name displayed on nav bar -->
+        <h1>Travel Guide</h1>
+        <ul>
+            <!-- Navigation bar - links to other pages and buttons -->
+            <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+            <li><a href="./about_us.html" id="about_us">About Us </a></li>
+            <li><a href="./contact_us.html" id="contact_us">Contact Us </a></li>
+            <li><input type="text" id="search" placeholder="Search for a place"></li>
+            <li><button id="searchBtn">Search</button></li>
+            <li><button id="resetBtn">Clear</button></li>
+        </ul>
+    </nav>
+
+    <!-- background image formatted in style.css -->
+    <img src="./background-image.jpg" class="background-image" alt="Fantasy forest">
+
+    <!-- Custom div class -->
+    <!-- Styled in the css file -->
+    <div class="intro">
+        <h1>Find Your Place</h1>
+
+        <!-- spacing between title and paragraph -->
+        <br>
+        <br>
+
+        <p>Whether it's a beach, national park, forest, city, or anything else,
+            this Travel Guide will help you find your perfect getaway.
+        </p>
+    </div>
+
+    <!-- container for dynamically added search results -->
+    <div id="searchResults"></div>
+
+    <!-- link to the javascript file -->
+    <script src="travel_recommendation.js"></script>
+</body>
+
+
+</html>
+<!-- end of the file -->

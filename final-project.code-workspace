@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../JavaScript Programming Essentials/health_census"
+		},
+		{
+			"path": "../../JavaScript Programming Essentials/final-project/travelRecommendation"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "travelRecommendation"
+	}
+}

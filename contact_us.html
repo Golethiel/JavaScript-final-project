@@ -1,0 +1,62 @@
+<!-- Identifies the file as HTML -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Title displayed in browser tab -->
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <!-- Displayed in nav bar -->
+        <h1>Travel Guide</h1>
+        <ul>
+            <!-- Navigation bar - links to other pages and buttons -->
+            <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+            <li><a href="./about_us.html" id="about_us">About Us </a></li>
+            <li><a href="./contact_us.html" id="contact_us">Contact Us </a></li>
+            <li><input type="text" id="search" placeholder="Search for a place"></li>
+            <li><button id="searchBtn">Search</button></li>
+            <li><button id="resetBtn">Clear</button></li>
+        </ul>
+    </nav>
+
+    <!-- background image formatted in style.css -->
+    <img src="./background-image.jpg" class="background-image" alt="Fantasy forest">
+
+    <!-- class to organize and style code -->
+    <section class="contact-section">
+
+        <!-- Custom div class -->
+        <div class="contact-header">
+            <!-- Custom formatted header -->
+            <h1>Contact Us</h1>
+        </div>
+
+        <!-- Custom form class -->
+        <form class="contact-form">
+            <!-- input for name -->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+
+            <!-- input for email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+            <!-- input for message -->
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <!-- submit button -->
+            <button type="submit">Submit</button>
+        </form>
+        <!-- end of form -->
+
+    </section>
+    <!-- end of section -->
+
+</body>
+
+</html>
